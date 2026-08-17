@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="HONDA CBF 250">
+  <defs>
+    <linearGradient id="bg-honda-cbf-250" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#101b27"/><stop offset="48%" stop-color="#0a121c"/><stop offset="100%" stop-color="#060b12"/>
+    </linearGradient>
+    <radialGradient id="glow-honda-cbf-250" cx="50%" cy="46%" r="58%">
+      <stop offset="0%" stop-color="#4d76a1" stop-opacity=".95"/>
+      <stop offset="42%" stop-color="#25405c" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#080e16" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="body-honda-cbf-250" x1="0.1" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#c0362d"/>
+      <stop offset="52%" stop-color="#c0362d"/>
+      <stop offset="100%" stop-color="#6c1a15"/>
+    </linearGradient>
+    <linearGradient id="glass-honda-cbf-250" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#cfe2f2" stop-opacity=".92"/>
+      <stop offset="45%" stop-color="#7f9cb8" stop-opacity=".82"/>
+      <stop offset="100%" stop-color="#22323f" stop-opacity=".92"/>
+    </linearGradient>
+    <radialGradient id="shadow-honda-cbf-250" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water-honda-cbf-250" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12354f"/><stop offset="100%" stop-color="#071723"/>
+    </linearGradient>
+    <linearGradient id="tagline-honda-cbf-250" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff7a3d"/><stop offset="100%" stop-color="#ff7a3d" stop-opacity="0"/>
+    </linearGradient>
+    
+    <radialGradient id="hub-honda-cbf-250-0" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#6b7c8d"/><stop offset="55%" stop-color="#38475a"/><stop offset="100%" stop-color="#1a2430"/>
+    </radialGradient>
+    <linearGradient id="rim-honda-cbf-250-0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93a4b6"/><stop offset="100%" stop-color="#3c4c5f"/>
+    </linearGradient>
+    <radialGradient id="hub-honda-cbf-250-1" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#6b7c8d"/><stop offset="55%" stop-color="#38475a"/><stop offset="100%" stop-color="#1a2430"/>
+    </radialGradient>
+    <linearGradient id="rim-honda-cbf-250-1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93a4b6"/><stop offset="100%" stop-color="#3c4c5f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg-honda-cbf-250)"/>
+  <ellipse cx="800" cy="460" rx="820" ry="470" fill="url(#glow-honda-cbf-250)"/>
+
+  <g opacity=".16" stroke="#7fa8cf" stroke-width="1.4">
+    <line x1="100" y1="0" x2="100" y2="1000"/><line x1="275" y1="0" x2="275" y2="1000"/><line x1="450" y1="0" x2="450" y2="1000"/><line x1="625" y1="0" x2="625" y2="1000"/><line x1="800" y1="0" x2="800" y2="1000"/><line x1="975" y1="0" x2="975" y2="1000"/><line x1="1150" y1="0" x2="1150" y2="1000"/><line x1="1325" y1="0" x2="1325" y2="1000"/><line x1="1500" y1="0" x2="1500" y2="1000"/>
+    <line x1="0" y1="120" x2="1600" y2="120"/><line x1="0" y1="280" x2="1600" y2="280"/><line x1="0" y1="440" x2="1600" y2="440"/><line x1="0" y1="600" x2="1600" y2="600"/><line x1="0" y1="760" x2="1600" y2="760"/><line x1="0" y1="920" x2="1600" y2="920"/>
+  </g>
+
+  <circle cx="800" cy="470" r="330" fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width="2"/>
+  <circle cx="800" cy="470" r="430" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="2"/>
+
+  <ellipse cx="800" cy="794" rx="560" ry="34" fill="url(#shadow-honda-cbf-250)"/>
+  
+  <g>
+    <circle cx="1164" cy="664" r="104" fill="#0a0f16"/>
+    <circle cx="1164" cy="664" r="104" fill="none" stroke="#1b2531" stroke-width="9.4"/>
+    <circle cx="1164" cy="664" r="81.1" fill="#111922"/>
+    <circle cx="1164" cy="664" r="62.4" fill="url(#hub-honda-cbf-250-0)"/>
+    <line x1="1181.5" y1="664.0" x2="1222.7" y2="664.0" stroke="url(#rim-honda-cbf-250-0)" stroke-width="7.8" stroke-linecap="round"/><line x1="1178.1" y1="674.3" x2="1211.5" y2="698.5" stroke="url(#rim-honda-cbf-250-0)" stroke-width="7.8" stroke-linecap="round"/><line x1="1169.4" y1="680.6" x2="1182.1" y2="719.8" stroke="url(#rim-honda-cbf-250-0)" stroke-width="7.8" stroke-linecap="round"/><line x1="1158.6" y1="680.6" x2="1145.9" y2="719.8" stroke="url(#rim-honda-cbf-250-0)" stroke-width="7.8" stroke-linecap="round"/><line x1="1149.9" y1="674.3" x2="1116.5" y2="698.5" stroke="url(#rim-honda-cbf-250-0)" stroke-width="7.8" stroke-linecap="round"/><line x1="1146.5" y1="664.0" x2="1105.3" y2="664.0" stroke="url(#rim-honda-cbf-250-0)" stroke-width="7.8" stroke-linecap="round"/><line x1="1149.9" y1="653.7" x2="1116.5" y2="629.5" stroke="url(#rim-honda-cbf-250-0)" stroke-width="7.8" stroke-linecap="round"/><line x1="1158.6" y1="647.4" x2="1145.9" y2="608.2" stroke="url(#rim-honda-cbf-250-0)" stroke-width="7.8" stroke-linecap="round"/><line x1="1169.4" y1="647.4" x2="1182.1" y2="608.2" stroke="url(#rim-honda-cbf-250-0)" stroke-width="7.8" stroke-linecap="round"/><line x1="1178.1" y1="653.7" x2="1211.5" y2="629.5" stroke="url(#rim-honda-cbf-250-0)" stroke-width="7.8" stroke-linecap="round"/>
+    <circle cx="1164" cy="664" r="16.2" fill="#2b3947"/>
+    <circle cx="1164" cy="664" r="16.2" fill="none" stroke="#4a5b6c" stroke-width="2"/>
+  </g>
+  <g>
+    <circle cx="480" cy="666" r="102" fill="#0a0f16"/>
+    <circle cx="480" cy="666" r="102" fill="none" stroke="#1b2531" stroke-width="9.2"/>
+    <circle cx="480" cy="666" r="79.6" fill="#111922"/>
+    <circle cx="480" cy="666" r="61.2" fill="url(#hub-honda-cbf-250-1)"/>
+    <line x1="497.1" y1="666.0" x2="537.5" y2="666.0" stroke="url(#rim-honda-cbf-250-1)" stroke-width="7.6" stroke-linecap="round"/><line x1="493.9" y1="676.1" x2="526.5" y2="699.8" stroke="url(#rim-honda-cbf-250-1)" stroke-width="7.6" stroke-linecap="round"/><line x1="485.3" y1="682.3" x2="497.8" y2="720.7" stroke="url(#rim-honda-cbf-250-1)" stroke-width="7.6" stroke-linecap="round"/><line x1="474.7" y1="682.3" x2="462.2" y2="720.7" stroke="url(#rim-honda-cbf-250-1)" stroke-width="7.6" stroke-linecap="round"/><line x1="466.1" y1="676.1" x2="433.5" y2="699.8" stroke="url(#rim-honda-cbf-250-1)" stroke-width="7.6" stroke-linecap="round"/><line x1="462.9" y1="666.0" x2="422.5" y2="666.0" stroke="url(#rim-honda-cbf-250-1)" stroke-width="7.6" stroke-linecap="round"/><line x1="466.1" y1="655.9" x2="433.5" y2="632.2" stroke="url(#rim-honda-cbf-250-1)" stroke-width="7.6" stroke-linecap="round"/><line x1="474.7" y1="649.7" x2="462.2" y2="611.3" stroke="url(#rim-honda-cbf-250-1)" stroke-width="7.6" stroke-linecap="round"/><line x1="485.3" y1="649.7" x2="497.8" y2="611.3" stroke="url(#rim-honda-cbf-250-1)" stroke-width="7.6" stroke-linecap="round"/><line x1="493.9" y1="655.9" x2="526.5" y2="632.2" stroke="url(#rim-honda-cbf-250-1)" stroke-width="7.6" stroke-linecap="round"/>
+    <circle cx="480" cy="666" r="15.9" fill="#2b3947"/>
+    <circle cx="480" cy="666" r="15.9" fill="none" stroke="#4a5b6c" stroke-width="2"/>
+  </g>
+  <path d="M 512 556
+      C 552 524 610 514 672 520
+      L 792 532
+      C 802 488 830 464 876 456
+      L 978 444
+      C 1018 440 1036 460 1030 496
+      L 1016 546
+      L 906 560
+      L 802 568
+      C 758 594 692 604 630 596
+      L 530 584
+      C 504 578 496 566 512 556 Z" fill="url(#body-honda-cbf-250)"/>
+  <path d="M 512 556
+      C 552 524 610 514 672 520
+      L 792 532
+      C 802 488 830 464 876 456
+      L 978 444
+      C 1018 440 1036 460 1030 496
+      L 1016 546
+      L 906 560
+      L 802 568
+      C 758 594 692 604 630 596
+      L 530 584
+      C 504 578 496 566 512 556 Z" fill="none" stroke="#ffffff" stroke-opacity=".3" stroke-width="3.5"/>
+  <path d="M 946 456 C 990 450 1014 470 1008 502 L 1000 540 L 928 532 Z" fill="url(#glass-honda-cbf-250)"/>
+  <path d="M 946 456 C 990 450 1014 470 1008 502 L 1000 540 L 928 532 Z" fill="none" stroke="#0b1118" stroke-opacity=".35" stroke-width="3"/>
+  
+      <path d="M 792 566 L 480 666" stroke="#131c26" stroke-width="26" stroke-linecap="round"/>
+      <path d="M 1022 500 L 1164 664" stroke="#131c26" stroke-width="24" stroke-linecap="round"/>
+      <path d="M 1000 486 L 1150 640" stroke="#5c6d80" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 752 566 L 966 552 C 1004 550 1020 570 1014 600 L 1000 640 C 994 662 976 672 950 670 L 800 658 C 768 654 750 634 748 604 Z" fill="#101822" fill-opacity=".85"/>
+      <path d="M 760 640 L 1050 634" stroke="#4a5b6c" stroke-width="14" stroke-linecap="round"/>
+      <path d="M 512 556 C 600 542 720 540 800 548" stroke="#ffffff" stroke-opacity=".22" stroke-width="6" fill="none"/>
+      <path d="M 920 412 L 1096 400" stroke="#1b2531" stroke-width="18" stroke-linecap="round"/>
+      <path d="M 1010 400 L 1034 452" stroke="#1b2531" stroke-width="12" stroke-linecap="round"/>
+  <ellipse cx="1042" cy="470" rx="34" ry="16" fill="#fff3d8" opacity=".95"/>
+  <ellipse cx="1042" cy="470" rx="72" ry="34" fill="#ffe6b0" opacity=".18"/>
+  <ellipse cx="520" cy="540" rx="20" ry="13" fill="#ff4d3d" opacity=".92"/>
+
+  <text x="1514" y="944" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="5" font-weight="700" fill="#ffffff" fill-opacity=".28">MILLWAL</text>
+</svg>

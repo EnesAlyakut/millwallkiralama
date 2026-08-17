@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="YAMAHA VX CRUISER">
+  <defs>
+    <linearGradient id="bg-yamaha-vx-cruiser" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#101b27"/><stop offset="48%" stop-color="#0a121c"/><stop offset="100%" stop-color="#060b12"/>
+    </linearGradient>
+    <radialGradient id="glow-yamaha-vx-cruiser" cx="50%" cy="46%" r="58%">
+      <stop offset="0%" stop-color="#4d76a1" stop-opacity=".95"/>
+      <stop offset="42%" stop-color="#25405c" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#080e16" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="body-yamaha-vx-cruiser" x1="0.1" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#1f4c74"/>
+      <stop offset="52%" stop-color="#1f4c74"/>
+      <stop offset="100%" stop-color="#0c2136"/>
+    </linearGradient>
+    <linearGradient id="glass-yamaha-vx-cruiser" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#cfe2f2" stop-opacity=".92"/>
+      <stop offset="45%" stop-color="#7f9cb8" stop-opacity=".82"/>
+      <stop offset="100%" stop-color="#22323f" stop-opacity=".92"/>
+    </linearGradient>
+    <radialGradient id="shadow-yamaha-vx-cruiser" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water-yamaha-vx-cruiser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12354f"/><stop offset="100%" stop-color="#071723"/>
+    </linearGradient>
+    <linearGradient id="tagline-yamaha-vx-cruiser" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff7a3d"/><stop offset="100%" stop-color="#ff7a3d" stop-opacity="0"/>
+    </linearGradient>
+    
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg-yamaha-vx-cruiser)"/>
+  <ellipse cx="800" cy="460" rx="820" ry="470" fill="url(#glow-yamaha-vx-cruiser)"/>
+
+  <g opacity=".16" stroke="#7fa8cf" stroke-width="1.4">
+    <line x1="100" y1="0" x2="100" y2="1000"/><line x1="275" y1="0" x2="275" y2="1000"/><line x1="450" y1="0" x2="450" y2="1000"/><line x1="625" y1="0" x2="625" y2="1000"/><line x1="800" y1="0" x2="800" y2="1000"/><line x1="975" y1="0" x2="975" y2="1000"/><line x1="1150" y1="0" x2="1150" y2="1000"/><line x1="1325" y1="0" x2="1325" y2="1000"/><line x1="1500" y1="0" x2="1500" y2="1000"/>
+    <line x1="0" y1="120" x2="1600" y2="120"/><line x1="0" y1="280" x2="1600" y2="280"/><line x1="0" y1="440" x2="1600" y2="440"/><line x1="0" y1="600" x2="1600" y2="600"/><line x1="0" y1="760" x2="1600" y2="760"/><line x1="0" y1="920" x2="1600" y2="920"/>
+  </g>
+
+  <circle cx="800" cy="470" r="330" fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width="2"/>
+  <circle cx="800" cy="470" r="430" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="2"/>
+
+  <g opacity=".85">
+        <path d="M 0 742 C 220 726 380 758 600 748 C 820 738 1000 762 1220 750 C 1360 742 1500 754 1600 744 L 1600 1000 L 0 1000 Z" fill="url(#water-yamaha-vx-cruiser)"/>
+        <path d="M 120 790 C 320 780 460 800 660 792" stroke="#ffffff" stroke-opacity=".18" stroke-width="5" fill="none"/>
+        <path d="M 820 828 C 1000 818 1160 836 1360 826" stroke="#ffffff" stroke-opacity=".12" stroke-width="5" fill="none"/>
+      </g>
+  
+  <path d="M 300 592
+      C 332 546 392 522 476 518
+      L 690 508
+      C 720 462 762 434 822 428
+      L 1002 414
+      C 1084 408 1142 434 1168 484
+      L 1236 596
+      C 1268 630 1258 660 1214 668
+      L 486 682
+      C 364 676 302 644 300 592 Z" fill="url(#body-yamaha-vx-cruiser)"/>
+  <path d="M 300 592
+      C 332 546 392 522 476 518
+      L 690 508
+      C 720 462 762 434 822 428
+      L 1002 414
+      C 1084 408 1142 434 1168 484
+      L 1236 596
+      C 1268 630 1258 660 1214 668
+      L 486 682
+      C 364 676 302 644 300 592 Z" fill="none" stroke="#ffffff" stroke-opacity=".3" stroke-width="3.5"/>
+  <path d="M 856 452 C 872 432 900 422 940 420 L 1010 418 C 1052 418 1078 436 1090 470 L 1096 492 L 840 500 Z" fill="url(#glass-yamaha-vx-cruiser)"/>
+  <path d="M 856 452 C 872 432 900 422 940 420 L 1010 418 C 1052 418 1078 436 1090 470 L 1096 492 L 840 500 Z" fill="none" stroke="#0b1118" stroke-opacity=".35" stroke-width="3"/>
+  
+      <path d="M 336 600 C 640 620 1000 622 1230 608" stroke="#ffffff" stroke-opacity=".28" stroke-width="7" fill="none"/>
+      <path d="M 452 646 L 1206 636" stroke="#0b1118" stroke-opacity=".35" stroke-width="7"/>
+      <path d="M 490 528 C 560 512 640 506 700 508 L 700 566 C 620 570 540 574 486 584 Z" fill="#0b1118" fill-opacity=".38"/>
+      <path d="M 700 512 L 700 604" stroke="#0b1118" stroke-opacity=".3" stroke-width="4"/>
+      <path d="M 1096 448 L 1226 416" stroke="#1b2531" stroke-width="15" stroke-linecap="round"/>
+      <path d="M 1180 424 L 1196 470" stroke="#1b2531" stroke-width="11" stroke-linecap="round"/>
+  <ellipse cx="1224" cy="552" rx="34" ry="16" fill="#fff3d8" opacity=".95"/>
+  <ellipse cx="1224" cy="552" rx="72" ry="34" fill="#ffe6b0" opacity=".18"/>
+  <ellipse cx="318" cy="566" rx="20" ry="13" fill="#ff4d3d" opacity=".92"/>
+
+  <text x="1514" y="944" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="5" font-weight="700" fill="#ffffff" fill-opacity=".28">MILLWAL</text>
+</svg>

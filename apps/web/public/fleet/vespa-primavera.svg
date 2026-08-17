@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="VESPA PRIMAVERA">
+  <defs>
+    <linearGradient id="bg-vespa-primavera" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#101b27"/><stop offset="48%" stop-color="#0a121c"/><stop offset="100%" stop-color="#060b12"/>
+    </linearGradient>
+    <radialGradient id="glow-vespa-primavera" cx="50%" cy="46%" r="58%">
+      <stop offset="0%" stop-color="#4d76a1" stop-opacity=".95"/>
+      <stop offset="42%" stop-color="#25405c" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#080e16" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="body-vespa-primavera" x1="0.1" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#3f6f6a"/>
+      <stop offset="52%" stop-color="#3f6f6a"/>
+      <stop offset="100%" stop-color="#1d3a37"/>
+    </linearGradient>
+    <linearGradient id="glass-vespa-primavera" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#cfe2f2" stop-opacity=".92"/>
+      <stop offset="45%" stop-color="#7f9cb8" stop-opacity=".82"/>
+      <stop offset="100%" stop-color="#22323f" stop-opacity=".92"/>
+    </linearGradient>
+    <radialGradient id="shadow-vespa-primavera" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water-vespa-primavera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12354f"/><stop offset="100%" stop-color="#071723"/>
+    </linearGradient>
+    <linearGradient id="tagline-vespa-primavera" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff7a3d"/><stop offset="100%" stop-color="#ff7a3d" stop-opacity="0"/>
+    </linearGradient>
+    
+    <radialGradient id="hub-vespa-primavera-0" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#6b7c8d"/><stop offset="55%" stop-color="#38475a"/><stop offset="100%" stop-color="#1a2430"/>
+    </radialGradient>
+    <linearGradient id="rim-vespa-primavera-0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93a4b6"/><stop offset="100%" stop-color="#3c4c5f"/>
+    </linearGradient>
+    <radialGradient id="hub-vespa-primavera-1" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#6b7c8d"/><stop offset="55%" stop-color="#38475a"/><stop offset="100%" stop-color="#1a2430"/>
+    </radialGradient>
+    <linearGradient id="rim-vespa-primavera-1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93a4b6"/><stop offset="100%" stop-color="#3c4c5f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg-vespa-primavera)"/>
+  <ellipse cx="800" cy="460" rx="820" ry="470" fill="url(#glow-vespa-primavera)"/>
+
+  <g opacity=".16" stroke="#7fa8cf" stroke-width="1.4">
+    <line x1="100" y1="0" x2="100" y2="1000"/><line x1="275" y1="0" x2="275" y2="1000"/><line x1="450" y1="0" x2="450" y2="1000"/><line x1="625" y1="0" x2="625" y2="1000"/><line x1="800" y1="0" x2="800" y2="1000"/><line x1="975" y1="0" x2="975" y2="1000"/><line x1="1150" y1="0" x2="1150" y2="1000"/><line x1="1325" y1="0" x2="1325" y2="1000"/><line x1="1500" y1="0" x2="1500" y2="1000"/>
+    <line x1="0" y1="120" x2="1600" y2="120"/><line x1="0" y1="280" x2="1600" y2="280"/><line x1="0" y1="440" x2="1600" y2="440"/><line x1="0" y1="600" x2="1600" y2="600"/><line x1="0" y1="760" x2="1600" y2="760"/><line x1="0" y1="920" x2="1600" y2="920"/>
+  </g>
+
+  <circle cx="800" cy="470" r="330" fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width="2"/>
+  <circle cx="800" cy="470" r="430" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="2"/>
+
+  <ellipse cx="800" cy="794" rx="560" ry="34" fill="url(#shadow-vespa-primavera)"/>
+  
+  <g>
+    <circle cx="1152" cy="660" r="90" fill="#0a0f16"/>
+    <circle cx="1152" cy="660" r="90" fill="none" stroke="#1b2531" stroke-width="8.1"/>
+    <circle cx="1152" cy="660" r="70.2" fill="#111922"/>
+    <circle cx="1152" cy="660" r="54.0" fill="url(#hub-vespa-primavera-0)"/>
+    <line x1="1167.1" y1="660.0" x2="1202.8" y2="660.0" stroke="url(#rim-vespa-primavera-0)" stroke-width="6.8" stroke-linecap="round"/><line x1="1164.2" y1="668.9" x2="1193.1" y2="689.8" stroke="url(#rim-vespa-primavera-0)" stroke-width="6.8" stroke-linecap="round"/><line x1="1156.7" y1="674.4" x2="1167.7" y2="708.3" stroke="url(#rim-vespa-primavera-0)" stroke-width="6.8" stroke-linecap="round"/><line x1="1147.3" y1="674.4" x2="1136.3" y2="708.3" stroke="url(#rim-vespa-primavera-0)" stroke-width="6.8" stroke-linecap="round"/><line x1="1139.8" y1="668.9" x2="1110.9" y2="689.8" stroke="url(#rim-vespa-primavera-0)" stroke-width="6.8" stroke-linecap="round"/><line x1="1136.9" y1="660.0" x2="1101.2" y2="660.0" stroke="url(#rim-vespa-primavera-0)" stroke-width="6.8" stroke-linecap="round"/><line x1="1139.8" y1="651.1" x2="1110.9" y2="630.2" stroke="url(#rim-vespa-primavera-0)" stroke-width="6.8" stroke-linecap="round"/><line x1="1147.3" y1="645.6" x2="1136.3" y2="611.7" stroke="url(#rim-vespa-primavera-0)" stroke-width="6.8" stroke-linecap="round"/><line x1="1156.7" y1="645.6" x2="1167.7" y2="611.7" stroke="url(#rim-vespa-primavera-0)" stroke-width="6.8" stroke-linecap="round"/><line x1="1164.2" y1="651.1" x2="1193.1" y2="630.2" stroke="url(#rim-vespa-primavera-0)" stroke-width="6.8" stroke-linecap="round"/>
+    <circle cx="1152" cy="660" r="14.0" fill="#2b3947"/>
+    <circle cx="1152" cy="660" r="14.0" fill="none" stroke="#4a5b6c" stroke-width="2"/>
+  </g>
+  <g>
+    <circle cx="500" cy="664" r="90" fill="#0a0f16"/>
+    <circle cx="500" cy="664" r="90" fill="none" stroke="#1b2531" stroke-width="8.1"/>
+    <circle cx="500" cy="664" r="70.2" fill="#111922"/>
+    <circle cx="500" cy="664" r="54.0" fill="url(#hub-vespa-primavera-1)"/>
+    <line x1="515.1" y1="664.0" x2="550.8" y2="664.0" stroke="url(#rim-vespa-primavera-1)" stroke-width="6.8" stroke-linecap="round"/><line x1="512.2" y1="672.9" x2="541.1" y2="693.8" stroke="url(#rim-vespa-primavera-1)" stroke-width="6.8" stroke-linecap="round"/><line x1="504.7" y1="678.4" x2="515.7" y2="712.3" stroke="url(#rim-vespa-primavera-1)" stroke-width="6.8" stroke-linecap="round"/><line x1="495.3" y1="678.4" x2="484.3" y2="712.3" stroke="url(#rim-vespa-primavera-1)" stroke-width="6.8" stroke-linecap="round"/><line x1="487.8" y1="672.9" x2="458.9" y2="693.8" stroke="url(#rim-vespa-primavera-1)" stroke-width="6.8" stroke-linecap="round"/><line x1="484.9" y1="664.0" x2="449.2" y2="664.0" stroke="url(#rim-vespa-primavera-1)" stroke-width="6.8" stroke-linecap="round"/><line x1="487.8" y1="655.1" x2="458.9" y2="634.2" stroke="url(#rim-vespa-primavera-1)" stroke-width="6.8" stroke-linecap="round"/><line x1="495.3" y1="649.6" x2="484.3" y2="615.7" stroke="url(#rim-vespa-primavera-1)" stroke-width="6.8" stroke-linecap="round"/><line x1="504.7" y1="649.6" x2="515.7" y2="615.7" stroke="url(#rim-vespa-primavera-1)" stroke-width="6.8" stroke-linecap="round"/><line x1="512.2" y1="655.1" x2="541.1" y2="634.2" stroke="url(#rim-vespa-primavera-1)" stroke-width="6.8" stroke-linecap="round"/>
+    <circle cx="500" cy="664" r="14.0" fill="#2b3947"/>
+    <circle cx="500" cy="664" r="14.0" fill="none" stroke="#4a5b6c" stroke-width="2"/>
+  </g>
+  <path d="M 398 606
+      C 390 550 428 518 494 514
+      L 668 520
+      C 704 522 726 542 732 574
+      L 740 600
+      L 890 600
+      C 890 518 918 462 966 432
+      L 1038 388
+      C 1072 368 1102 388 1092 428
+      L 1046 594
+      C 1040 614 1024 624 1000 624
+      L 470 638
+      C 418 636 400 628 398 606 Z" fill="url(#body-vespa-primavera)"/>
+  <path d="M 398 606
+      C 390 550 428 518 494 514
+      L 668 520
+      C 704 522 726 542 732 574
+      L 740 600
+      L 890 600
+      C 890 518 918 462 966 432
+      L 1038 388
+      C 1072 368 1102 388 1092 428
+      L 1046 594
+      C 1040 614 1024 624 1000 624
+      L 470 638
+      C 418 636 400 628 398 606 Z" fill="none" stroke="#ffffff" stroke-opacity=".3" stroke-width="3.5"/>
+  <path d="M 1002 424 C 1036 402 1064 414 1058 444 L 1042 500 L 984 486 Z" fill="url(#glass-vespa-primavera)"/>
+  <path d="M 1002 424 C 1036 402 1064 414 1058 444 L 1042 500 L 984 486 Z" fill="none" stroke="#0b1118" stroke-opacity=".35" stroke-width="3"/>
+  
+      <path d="M 736 592 L 500 664" stroke="#131c26" stroke-width="22" stroke-linecap="round"/>
+      <path d="M 1058 470 L 1152 656" stroke="#131c26" stroke-width="20" stroke-linecap="round"/>
+      <path d="M 1046 464 L 1136 640" stroke="#5c6d80" stroke-width="7" stroke-linecap="round"/>
+      <path d="M 420 566 C 520 540 626 534 700 542 L 706 578 C 620 574 500 584 428 600 Z" fill="#0b1118" fill-opacity=".45"/>
+      <path d="M 740 600 L 890 600" stroke="#0b1118" stroke-opacity=".45" stroke-width="9"/>
+      <path d="M 906 520 C 960 512 1010 508 1052 510" stroke="#ffffff" stroke-opacity=".24" stroke-width="6" fill="none"/>
+      <path d="M 946 356 L 1128 344" stroke="#1b2531" stroke-width="16" stroke-linecap="round"/>
+      <path d="M 1042 350 L 1058 394" stroke="#1b2531" stroke-width="11" stroke-linecap="round"/>
+  <ellipse cx="1080" cy="452" rx="34" ry="16" fill="#fff3d8" opacity=".95"/>
+  <ellipse cx="1080" cy="452" rx="72" ry="34" fill="#ffe6b0" opacity=".18"/>
+  <ellipse cx="412" cy="560" rx="20" ry="13" fill="#ff4d3d" opacity=".92"/>
+
+  <text x="1514" y="944" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="5" font-weight="700" fill="#ffffff" fill-opacity=".28">MILLWAL</text>
+</svg>

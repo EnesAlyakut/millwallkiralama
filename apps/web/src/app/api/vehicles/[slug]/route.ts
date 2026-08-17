@@ -1,0 +1,1 @@
+import {db} from '@/lib/db';export async function GET(_:Request,{params}:{params:Promise<{slug:string}>}){const {slug}=await params;const v=await db.vehicle.findFirst({where:{slug,deletedAt:null,status:{not:'PASSIVE'}},include:{category:true,images:true}});return v?Response.json(v):Response.json({error:'Bulunamadı.'},{status:404})}

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="ŠKODA SUPERB">
+  <defs>
+    <linearGradient id="bg-skoda-superb" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#101b27"/><stop offset="48%" stop-color="#0a121c"/><stop offset="100%" stop-color="#060b12"/>
+    </linearGradient>
+    <radialGradient id="glow-skoda-superb" cx="50%" cy="46%" r="58%">
+      <stop offset="0%" stop-color="#4d76a1" stop-opacity=".95"/>
+      <stop offset="42%" stop-color="#25405c" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#080e16" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="body-skoda-superb" x1="0.1" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#243444"/>
+      <stop offset="52%" stop-color="#243444"/>
+      <stop offset="100%" stop-color="#0f1720"/>
+    </linearGradient>
+    <linearGradient id="glass-skoda-superb" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#cfe2f2" stop-opacity=".92"/>
+      <stop offset="45%" stop-color="#7f9cb8" stop-opacity=".82"/>
+      <stop offset="100%" stop-color="#22323f" stop-opacity=".92"/>
+    </linearGradient>
+    <radialGradient id="shadow-skoda-superb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water-skoda-superb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12354f"/><stop offset="100%" stop-color="#071723"/>
+    </linearGradient>
+    <linearGradient id="tagline-skoda-superb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff7a3d"/><stop offset="100%" stop-color="#ff7a3d" stop-opacity="0"/>
+    </linearGradient>
+    
+    <radialGradient id="hub-skoda-superb-0" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#6b7c8d"/><stop offset="55%" stop-color="#38475a"/><stop offset="100%" stop-color="#1a2430"/>
+    </radialGradient>
+    <linearGradient id="rim-skoda-superb-0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93a4b6"/><stop offset="100%" stop-color="#3c4c5f"/>
+    </linearGradient>
+    <radialGradient id="hub-skoda-superb-1" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#6b7c8d"/><stop offset="55%" stop-color="#38475a"/><stop offset="100%" stop-color="#1a2430"/>
+    </radialGradient>
+    <linearGradient id="rim-skoda-superb-1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93a4b6"/><stop offset="100%" stop-color="#3c4c5f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg-skoda-superb)"/>
+  <ellipse cx="800" cy="460" rx="820" ry="470" fill="url(#glow-skoda-superb)"/>
+
+  <g opacity=".16" stroke="#7fa8cf" stroke-width="1.4">
+    <line x1="100" y1="0" x2="100" y2="1000"/><line x1="275" y1="0" x2="275" y2="1000"/><line x1="450" y1="0" x2="450" y2="1000"/><line x1="625" y1="0" x2="625" y2="1000"/><line x1="800" y1="0" x2="800" y2="1000"/><line x1="975" y1="0" x2="975" y2="1000"/><line x1="1150" y1="0" x2="1150" y2="1000"/><line x1="1325" y1="0" x2="1325" y2="1000"/><line x1="1500" y1="0" x2="1500" y2="1000"/>
+    <line x1="0" y1="120" x2="1600" y2="120"/><line x1="0" y1="280" x2="1600" y2="280"/><line x1="0" y1="440" x2="1600" y2="440"/><line x1="0" y1="600" x2="1600" y2="600"/><line x1="0" y1="760" x2="1600" y2="760"/><line x1="0" y1="920" x2="1600" y2="920"/>
+  </g>
+
+  <circle cx="800" cy="470" r="330" fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width="2"/>
+  <circle cx="800" cy="470" r="430" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="2"/>
+
+  <ellipse cx="800" cy="794" rx="560" ry="34" fill="url(#shadow-skoda-superb)"/>
+  
+  <g>
+    <circle cx="1146" cy="664" r="100" fill="#0a0f16"/>
+    <circle cx="1146" cy="664" r="100" fill="none" stroke="#1b2531" stroke-width="9.0"/>
+    <circle cx="1146" cy="664" r="78.0" fill="#111922"/>
+    <circle cx="1146" cy="664" r="60.0" fill="url(#hub-skoda-superb-0)"/>
+    <line x1="1162.8" y1="664.0" x2="1202.4" y2="664.0" stroke="url(#rim-skoda-superb-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1159.6" y1="673.9" x2="1191.6" y2="697.2" stroke="url(#rim-skoda-superb-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1151.2" y1="680.0" x2="1163.4" y2="717.6" stroke="url(#rim-skoda-superb-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1140.8" y1="680.0" x2="1128.6" y2="717.6" stroke="url(#rim-skoda-superb-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1132.4" y1="673.9" x2="1100.4" y2="697.2" stroke="url(#rim-skoda-superb-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1129.2" y1="664.0" x2="1089.6" y2="664.0" stroke="url(#rim-skoda-superb-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1132.4" y1="654.1" x2="1100.4" y2="630.8" stroke="url(#rim-skoda-superb-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1140.8" y1="648.0" x2="1128.6" y2="610.4" stroke="url(#rim-skoda-superb-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1151.2" y1="648.0" x2="1163.4" y2="610.4" stroke="url(#rim-skoda-superb-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1159.6" y1="654.1" x2="1191.6" y2="630.8" stroke="url(#rim-skoda-superb-0)" stroke-width="7.5" stroke-linecap="round"/>
+    <circle cx="1146" cy="664" r="15.6" fill="#2b3947"/>
+    <circle cx="1146" cy="664" r="15.6" fill="none" stroke="#4a5b6c" stroke-width="2"/>
+  </g>
+  <g>
+    <circle cx="508" cy="664" r="100" fill="#0a0f16"/>
+    <circle cx="508" cy="664" r="100" fill="none" stroke="#1b2531" stroke-width="9.0"/>
+    <circle cx="508" cy="664" r="78.0" fill="#111922"/>
+    <circle cx="508" cy="664" r="60.0" fill="url(#hub-skoda-superb-1)"/>
+    <line x1="524.8" y1="664.0" x2="564.4" y2="664.0" stroke="url(#rim-skoda-superb-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="521.6" y1="673.9" x2="553.6" y2="697.2" stroke="url(#rim-skoda-superb-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="513.2" y1="680.0" x2="525.4" y2="717.6" stroke="url(#rim-skoda-superb-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="502.8" y1="680.0" x2="490.6" y2="717.6" stroke="url(#rim-skoda-superb-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="494.4" y1="673.9" x2="462.4" y2="697.2" stroke="url(#rim-skoda-superb-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="491.2" y1="664.0" x2="451.6" y2="664.0" stroke="url(#rim-skoda-superb-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="494.4" y1="654.1" x2="462.4" y2="630.8" stroke="url(#rim-skoda-superb-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="502.8" y1="648.0" x2="490.6" y2="610.4" stroke="url(#rim-skoda-superb-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="513.2" y1="648.0" x2="525.4" y2="610.4" stroke="url(#rim-skoda-superb-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="521.6" y1="654.1" x2="553.6" y2="630.8" stroke="url(#rim-skoda-superb-1)" stroke-width="7.5" stroke-linecap="round"/>
+    <circle cx="508" cy="664" r="15.6" fill="#2b3947"/>
+    <circle cx="508" cy="664" r="15.6" fill="none" stroke="#4a5b6c" stroke-width="2"/>
+  </g>
+  <path d="M 270 656
+      L 264 496
+      C 264 448 286 426 326 418
+      L 490 402
+      L 902 394
+      C 962 396 1002 412 1028 444
+      L 1112 522
+      C 1214 536 1302 568 1350 602
+      C 1372 620 1378 638 1372 656
+      L 1250 656
+      A 102 102 0 0 0 1046 656
+      L 612 656
+      A 102 102 0 0 0 408 656
+      Z" fill="url(#body-skoda-superb)"/>
+  <path d="M 270 656
+      L 264 496
+      C 264 448 286 426 326 418
+      L 490 402
+      L 902 394
+      C 962 396 1002 412 1028 444
+      L 1112 522
+      C 1214 536 1302 568 1350 602
+      C 1372 620 1378 638 1372 656
+      L 1250 656
+      A 102 102 0 0 0 1046 656
+      L 612 656
+      A 102 102 0 0 0 408 656
+      Z" fill="none" stroke="#ffffff" stroke-opacity=".3" stroke-width="3.5"/>
+  <path d="M 302 500 L 302 448 C 304 428 320 418 348 414 L 900 406 C 944 406 970 420 988 448 L 1046 516 Z" fill="url(#glass-skoda-superb)"/>
+  <path d="M 302 500 L 302 448 C 304 428 320 418 348 414 L 900 406 C 944 406 970 420 988 448 L 1046 516 Z" fill="none" stroke="#0b1118" stroke-opacity=".35" stroke-width="3"/>
+  
+      <path d="M 520 410 L 520 512" stroke="#0b1118" stroke-opacity=".4" stroke-width="4"/>
+      <path d="M 762 406 L 762 510" stroke="#0b1118" stroke-opacity=".4" stroke-width="4"/>
+      <path d="M 302 540 C 540 558 960 568 1358 562" stroke="#ffffff" stroke-opacity=".2" stroke-width="5" fill="none"/>
+      <path d="M 872 600 L 934 600" stroke="#0b1118" stroke-opacity=".45" stroke-width="9" stroke-linecap="round"/>
+      <path d="M 620 600 L 682 600" stroke="#0b1118" stroke-opacity=".45" stroke-width="9" stroke-linecap="round"/>
+      <path d="M 350 394 L 880 386" stroke="#1b2531" stroke-width="12" stroke-linecap="round"/>
+  <ellipse cx="1362" cy="584" rx="34" ry="16" fill="#fff3d8" opacity=".95"/>
+  <ellipse cx="1362" cy="584" rx="72" ry="34" fill="#ffe6b0" opacity=".18"/>
+  <ellipse cx="280" cy="520" rx="20" ry="13" fill="#ff4d3d" opacity=".92"/>
+
+  <text x="1514" y="944" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="5" font-weight="700" fill="#ffffff" fill-opacity=".28">MILLWAL</text>
+</svg>

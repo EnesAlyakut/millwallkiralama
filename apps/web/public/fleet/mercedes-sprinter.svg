@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="MERCEDES SPRINTER">
+  <defs>
+    <linearGradient id="bg-mercedes-sprinter" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#101b27"/><stop offset="48%" stop-color="#0a121c"/><stop offset="100%" stop-color="#060b12"/>
+    </linearGradient>
+    <radialGradient id="glow-mercedes-sprinter" cx="50%" cy="46%" r="58%">
+      <stop offset="0%" stop-color="#4d76a1" stop-opacity=".95"/>
+      <stop offset="42%" stop-color="#25405c" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#080e16" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="body-mercedes-sprinter" x1="0.1" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#dde3e9"/>
+      <stop offset="52%" stop-color="#dde3e9"/>
+      <stop offset="100%" stop-color="#8d9baa"/>
+    </linearGradient>
+    <linearGradient id="glass-mercedes-sprinter" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#cfe2f2" stop-opacity=".92"/>
+      <stop offset="45%" stop-color="#7f9cb8" stop-opacity=".82"/>
+      <stop offset="100%" stop-color="#22323f" stop-opacity=".92"/>
+    </linearGradient>
+    <radialGradient id="shadow-mercedes-sprinter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water-mercedes-sprinter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12354f"/><stop offset="100%" stop-color="#071723"/>
+    </linearGradient>
+    <linearGradient id="tagline-mercedes-sprinter" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff7a3d"/><stop offset="100%" stop-color="#ff7a3d" stop-opacity="0"/>
+    </linearGradient>
+    
+    <radialGradient id="hub-mercedes-sprinter-0" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#6b7c8d"/><stop offset="55%" stop-color="#38475a"/><stop offset="100%" stop-color="#1a2430"/>
+    </radialGradient>
+    <linearGradient id="rim-mercedes-sprinter-0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93a4b6"/><stop offset="100%" stop-color="#3c4c5f"/>
+    </linearGradient>
+    <radialGradient id="hub-mercedes-sprinter-1" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#6b7c8d"/><stop offset="55%" stop-color="#38475a"/><stop offset="100%" stop-color="#1a2430"/>
+    </radialGradient>
+    <linearGradient id="rim-mercedes-sprinter-1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93a4b6"/><stop offset="100%" stop-color="#3c4c5f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg-mercedes-sprinter)"/>
+  <ellipse cx="800" cy="460" rx="820" ry="470" fill="url(#glow-mercedes-sprinter)"/>
+
+  <g opacity=".16" stroke="#7fa8cf" stroke-width="1.4">
+    <line x1="100" y1="0" x2="100" y2="1000"/><line x1="275" y1="0" x2="275" y2="1000"/><line x1="450" y1="0" x2="450" y2="1000"/><line x1="625" y1="0" x2="625" y2="1000"/><line x1="800" y1="0" x2="800" y2="1000"/><line x1="975" y1="0" x2="975" y2="1000"/><line x1="1150" y1="0" x2="1150" y2="1000"/><line x1="1325" y1="0" x2="1325" y2="1000"/><line x1="1500" y1="0" x2="1500" y2="1000"/>
+    <line x1="0" y1="120" x2="1600" y2="120"/><line x1="0" y1="280" x2="1600" y2="280"/><line x1="0" y1="440" x2="1600" y2="440"/><line x1="0" y1="600" x2="1600" y2="600"/><line x1="0" y1="760" x2="1600" y2="760"/><line x1="0" y1="920" x2="1600" y2="920"/>
+  </g>
+
+  <circle cx="800" cy="470" r="330" fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width="2"/>
+  <circle cx="800" cy="470" r="430" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="2"/>
+
+  <ellipse cx="800" cy="794" rx="560" ry="34" fill="url(#shadow-mercedes-sprinter)"/>
+  
+  <g>
+    <circle cx="1178" cy="664" r="100" fill="#0a0f16"/>
+    <circle cx="1178" cy="664" r="100" fill="none" stroke="#1b2531" stroke-width="9.0"/>
+    <circle cx="1178" cy="664" r="78.0" fill="#111922"/>
+    <circle cx="1178" cy="664" r="60.0" fill="url(#hub-mercedes-sprinter-0)"/>
+    <line x1="1194.8" y1="664.0" x2="1234.4" y2="664.0" stroke="url(#rim-mercedes-sprinter-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1191.6" y1="673.9" x2="1223.6" y2="697.2" stroke="url(#rim-mercedes-sprinter-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1183.2" y1="680.0" x2="1195.4" y2="717.6" stroke="url(#rim-mercedes-sprinter-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1172.8" y1="680.0" x2="1160.6" y2="717.6" stroke="url(#rim-mercedes-sprinter-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1164.4" y1="673.9" x2="1132.4" y2="697.2" stroke="url(#rim-mercedes-sprinter-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1161.2" y1="664.0" x2="1121.6" y2="664.0" stroke="url(#rim-mercedes-sprinter-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1164.4" y1="654.1" x2="1132.4" y2="630.8" stroke="url(#rim-mercedes-sprinter-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1172.8" y1="648.0" x2="1160.6" y2="610.4" stroke="url(#rim-mercedes-sprinter-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1183.2" y1="648.0" x2="1195.4" y2="610.4" stroke="url(#rim-mercedes-sprinter-0)" stroke-width="7.5" stroke-linecap="round"/><line x1="1191.6" y1="654.1" x2="1223.6" y2="630.8" stroke="url(#rim-mercedes-sprinter-0)" stroke-width="7.5" stroke-linecap="round"/>
+    <circle cx="1178" cy="664" r="15.6" fill="#2b3947"/>
+    <circle cx="1178" cy="664" r="15.6" fill="none" stroke="#4a5b6c" stroke-width="2"/>
+  </g>
+  <g>
+    <circle cx="452" cy="664" r="100" fill="#0a0f16"/>
+    <circle cx="452" cy="664" r="100" fill="none" stroke="#1b2531" stroke-width="9.0"/>
+    <circle cx="452" cy="664" r="78.0" fill="#111922"/>
+    <circle cx="452" cy="664" r="60.0" fill="url(#hub-mercedes-sprinter-1)"/>
+    <line x1="468.8" y1="664.0" x2="508.4" y2="664.0" stroke="url(#rim-mercedes-sprinter-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="465.6" y1="673.9" x2="497.6" y2="697.2" stroke="url(#rim-mercedes-sprinter-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="457.2" y1="680.0" x2="469.4" y2="717.6" stroke="url(#rim-mercedes-sprinter-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="446.8" y1="680.0" x2="434.6" y2="717.6" stroke="url(#rim-mercedes-sprinter-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="438.4" y1="673.9" x2="406.4" y2="697.2" stroke="url(#rim-mercedes-sprinter-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="435.2" y1="664.0" x2="395.6" y2="664.0" stroke="url(#rim-mercedes-sprinter-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="438.4" y1="654.1" x2="406.4" y2="630.8" stroke="url(#rim-mercedes-sprinter-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="446.8" y1="648.0" x2="434.6" y2="610.4" stroke="url(#rim-mercedes-sprinter-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="457.2" y1="648.0" x2="469.4" y2="610.4" stroke="url(#rim-mercedes-sprinter-1)" stroke-width="7.5" stroke-linecap="round"/><line x1="465.6" y1="654.1" x2="497.6" y2="630.8" stroke="url(#rim-mercedes-sprinter-1)" stroke-width="7.5" stroke-linecap="round"/>
+    <circle cx="452" cy="664" r="15.6" fill="#2b3947"/>
+    <circle cx="452" cy="664" r="15.6" fill="none" stroke="#4a5b6c" stroke-width="2"/>
+  </g>
+  <path d="M 236 656
+      C 226 540 230 420 240 344
+      C 246 300 274 280 328 276
+      L 970 276
+      C 1032 276 1078 300 1108 348
+      L 1188 486
+      C 1298 510 1358 546 1382 596
+      C 1392 618 1392 640 1386 656
+      L 1282 656
+      A 104 104 0 0 0 1074 656
+      L 556 656
+      A 104 104 0 0 0 348 656
+      Z" fill="url(#body-mercedes-sprinter)"/>
+  <path d="M 236 656
+      C 226 540 230 420 240 344
+      C 246 300 274 280 328 276
+      L 970 276
+      C 1032 276 1078 300 1108 348
+      L 1188 486
+      C 1298 510 1358 546 1382 596
+      C 1392 618 1392 640 1386 656
+      L 1282 656
+      A 104 104 0 0 0 1074 656
+      L 556 656
+      A 104 104 0 0 0 348 656
+      Z" fill="none" stroke="#ffffff" stroke-opacity=".3" stroke-width="3.5"/>
+  <path d="M 276 336 C 280 308 300 296 340 294 L 604 292 L 604 400 L 276 402 Z
+            M 700 292 L 952 292 C 1008 292 1044 312 1068 352 L 1122 464 L 700 452 Z" fill="url(#glass-mercedes-sprinter)"/>
+  <path d="M 276 336 C 280 308 300 296 340 294 L 604 292 L 604 400 L 276 402 Z
+            M 700 292 L 952 292 C 1008 292 1044 312 1068 352 L 1122 464 L 700 452 Z" fill="none" stroke="#0b1118" stroke-opacity=".35" stroke-width="3"/>
+  
+      <path d="M 664 288 L 664 650" stroke="#0b1118" stroke-opacity=".4" stroke-width="4"/>
+      <path d="M 240 474 C 520 498 980 510 1380 506" stroke="#ffffff" stroke-opacity=".16" stroke-width="5" fill="none"/>
+      <rect x="280" y="572" width="1020" height="26" rx="13" fill="#0b1118" fill-opacity=".35"/>
+      <path d="M 600 520 L 658 520" stroke="#0b1118" stroke-opacity=".45" stroke-width="9" stroke-linecap="round"/>
+  <ellipse cx="1374" cy="592" rx="34" ry="16" fill="#fff3d8" opacity=".95"/>
+  <ellipse cx="1374" cy="592" rx="72" ry="34" fill="#ffe6b0" opacity=".18"/>
+  <ellipse cx="250" cy="420" rx="20" ry="13" fill="#ff4d3d" opacity=".92"/>
+
+  <text x="1514" y="944" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="5" font-weight="700" fill="#ffffff" fill-opacity=".28">MILLWAL</text>
+</svg>

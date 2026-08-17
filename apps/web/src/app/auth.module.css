@@ -1,0 +1,19 @@
+.authPage { min-height: 720px; display: grid; grid-template-columns: .9fr 1.1fr; background: #f4f3ef; }
+.authStory { position: relative; padding: 105px max(50px,calc((100vw - 1180px)/2)); padding-right: 70px; background: #0e1e31; color: #fff; overflow: hidden; }
+.authStory::after { content: ''; position: absolute; width: 450px; height: 450px; border: 1px solid rgba(191,157,89,.25); border-radius: 50%; right: -230px; bottom: -170px; box-shadow: 0 0 0 50px rgba(191,157,89,.025),0 0 0 100px rgba(191,157,89,.02); }
+.kicker,.formHead > span { color: #b99a5d; font-size: 10px; font-weight: 800; letter-spacing: .17em; }
+.authStory h1 { max-width: 560px; margin: 22px 0; font-size: clamp(40px,4.4vw,62px); line-height: 1.04; letter-spacing: -.05em; }
+.authStory > p { max-width: 520px; color: #9ba8b5; line-height: 1.8; }
+.storyList { margin: 48px 0; border-top: 1px solid rgba(255,255,255,.12); }.storyList span { display: flex; gap: 18px; padding: 17px 0; border-bottom: 1px solid rgba(255,255,255,.12); color: #ced4da; font-size: 12px; }.storyList b { color: #b99a5d; font-family: Georgia,serif; font-weight: 400; }
+.authStory small { color: #788594; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.formSide { display: grid; place-items: center; padding: 55px 40px; }.formCard { width: min(100%,460px); }.registerCard { width: min(100%,560px); }
+.formHead { margin-bottom: 31px; }.formHead h2 { margin: 10px 0 7px; color: #142439; font-size: 32px; letter-spacing: -.035em; }.formHead p { margin: 0; color: #7a838d; font-size: 13px; }
+.formCard form { display: flex; flex-direction: column; gap: 18px; }.formCard label { position: relative; color: #344154; font-size: 11px; font-weight: 750; }.formCard label > a { float: right; color: #987a42; text-decoration: none; font-weight: 600; }
+.formCard input { display: block; width: 100%; height: 52px; margin-top: 8px; padding: 0 15px; border: 1px solid #dcdedc; border-radius: 2px; background: #fff; color: #15263b; outline: 0; font: inherit; font-size: 13px; font-weight: 400; }.formCard input:focus { border-color: #a78950; box-shadow: 0 0 0 3px rgba(167,137,80,.1); }
+.formCard form > button { height: 53px; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; border: 0; background: #13253a; color: #fff; font-weight: 800; cursor: pointer; }.formCard form > button:disabled { opacity: .65; cursor: wait; }.formCard form > button span { color: #c6a665; font-size: 18px; }
+.error { margin-bottom: 18px; padding: 12px 14px; border-left: 3px solid #a34c4c; background: #f7eaea; color: #873b3b; font-size: 12px; }
+.divider { margin: 25px 0; height: 1px; background: #dedfdd; text-align: center; }.divider span { position: relative; top: -8px; padding: 0 12px; background: #f4f3ef; color: #92989f; font-size: 10px; }
+.switchText { text-align: center; color: #6e7781; font-size: 12px; }.switchText a { color: #9b7b41; font-weight: 800; text-decoration: none; }
+.secureNote { margin-top: 24px; padding-top: 17px; border-top: 1px solid #dcdddb; color: #92989f; text-align: center; font-size: 9px; }.formRow { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }.formHint { color: #838b94; font-size: 9px; margin-top: -8px; }
+@media(max-width:900px){.authPage{grid-template-columns:1fr}.authStory{display:none}.formSide{min-height:720px}}
+@media(max-width:600px){.formSide{padding:48px 20px;place-items:start center}.formRow{grid-template-columns:1fr}.formHead h2{font-size:28px}}

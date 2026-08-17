@@ -1,0 +1,29 @@
+{
+  "name": "@kiralama/web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@kiralama/database": "workspace:*",
+    "@kiralama/shared": "workspace:*",
+    "bcryptjs": "^2.4.3",
+    "jose": "^5.9.0",
+    "next": "16.3.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.1",
+    "typescript": "^5"
+  }
+}
