@@ -4,12 +4,12 @@ import { logoFor, monogramFor } from '@/lib/brand-logos';
  * Marka logosu. Logo listesinde bulunmayan markalar için
  * marka adının ilk iki harfinden oluşan monogram gösterilir.
  */
-export default function BrandLogo({ name, size = 26 }: { name: string; size?: number }) {
+export default function BrandLogo({ name, size = 26, className = '' }: { name: string; size?: number, className?: string }) {
   const logo = logoFor(name);
 
   if (!logo) {
     return (
-      <span className="brand-logo brand-logo-mono" style={{ fontSize: Math.round(size * 0.46) }}>
+      <span className={`brand-logo brand-logo-mono ${className}`} style={{ fontSize: Math.round(size * 0.46) }}>
         {monogramFor(name)}
       </span>
     );
@@ -17,7 +17,7 @@ export default function BrandLogo({ name, size = 26 }: { name: string; size?: nu
 
   return (
     <svg
-      className="brand-logo"
+      className={`brand-logo ${className}`}
       width={size}
       height={size}
       viewBox="0 0 24 24"

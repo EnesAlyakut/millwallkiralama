@@ -8,9 +8,9 @@ const UPLOADS_DIR = path.join(process.cwd(), 'public', 'fleet');
 
 async function fetchHtml(url: string): Promise<string> {
   return new Promise((resolve, reject) => {
-    https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' } }, (res) => {
+    https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' } }, (res: any) => {
       let data = '';
-      res.on('data', chunk => data += chunk);
+      res.on('data', (chunk: any) => data += chunk);
       res.on('end', () => resolve(data));
     }).on('error', reject);
   });
@@ -18,9 +18,9 @@ async function fetchHtml(url: string): Promise<string> {
 
 async function fetchJson(url: string): Promise<any> {
   return new Promise((resolve, reject) => {
-    https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' } }, (res) => {
+    https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' } }, (res: any) => {
       let data = '';
-      res.on('data', chunk => data += chunk);
+      res.on('data', (chunk: any) => data += chunk);
       res.on('end', () => {
         try { resolve(JSON.parse(data)); } catch (e) { resolve(null); }
       });
@@ -32,7 +32,7 @@ async function downloadImage(url: string, dest: string): Promise<boolean> {
   return new Promise((resolve) => {
     const file = fs.createWriteStream(dest);
     const client = url.startsWith('https') ? https : http;
-    client.get(url, (response) => {
+    client.get(url, (response: any) => {
       if (response.statusCode !== 200) {
         file.close();
         return resolve(false);
