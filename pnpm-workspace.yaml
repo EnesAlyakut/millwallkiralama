@@ -1,0 +1,14 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+allowBuilds:
+  '@prisma/client': true
+  '@prisma/engines': true
+  esbuild: true
+  prisma: true
+  puppeteer: set this to true or false
+  unrs-resolver: true
+minimumReleaseAgeExclude:
+  - '@puppeteer/browsers@3.2.1'
+  - puppeteer-core@25.8.0
+  - puppeteer@25.8.0

@@ -1,0 +1,251 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum AdminRole {
+  SUPER_ADMIN
+  ADMIN
+}
+
+enum VehicleStatus {
+  AVAILABLE
+  RENTED
+  RESERVED
+  MAINTENANCE
+  PASSIVE
+}
+
+enum RequestStatus {
+  NEW
+  CALLED
+  CONTACTING
+  RESERVED
+  CANCELLED
+}
+
+model Admin {
+  id String @id @default(cuid())
+  name String
+  email String @unique
+  username String @unique
+  passwordHash String
+  role AdminRole @default(ADMIN)
+  isActive Boolean @default(true)
+  lastLoginAt DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id String @id @default(cuid())
+  name String
+  shortName String?
+  slug String @unique
+  description String?
+  longDescription String?
+  image String?
+  heroImage String?
+  icon String?
+  sortOrder Int @default(0)
+  isActive Boolean @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  vehicles Vehicle[]
+  @@index([slug])
+}
+
+model Vehicle {
+  id String @id @default(cuid())
+  categoryId String
+  category Category @relation(fields:[categoryId],references:[id],onDelete:Restrict)
+
+  // --- Kimlik ---
+  name String
+  slug String @unique
+  brand String
+  model String
+  version String?
+  year Int?
+  badge String?
+  shortDescription String?
+  description String?
+  highlightText String?
+
+  // --- Sınıf ve gövde ---
+  segment String?
+  bodyType String?
+  color String?
+  colorHex String?
+  seatCount Int?
+  doorCount Int?
+  luggageCapacity String?
+  trunkCapacity Int?
+
+  // --- Motor ve performans ---
+  fuelType String?
+  transmission String?
+  gearCount Int?
+  driveType String?
+  engine String?
+  engineVolume Int?
+  enginePower Int?
+  torque Int?
+  acceleration Float?
+  topSpeed Int?
+  fuelConsumption Float?
+  tankCapacity Int?
+  batteryCapacity Float?
+  electricRange Int?
+  chargeTime String?
+  emissionClass String?
+  co2Emission Int?
+
+  // --- Ölçüler ---
+  lengthMm Int?
+  widthMm Int?
+  heightMm Int?
+  curbWeight Int?
+
+  // --- Donanım (her satır bir madde) ---
+  safetyFeatures String?
+  comfortFeatures String?
+  techFeatures String?
+  exteriorFeatures String?
+
+  // --- Konfor bayrakları ---
+  hasAirConditioning Boolean @default(true)
+  hasNavigation Boolean @default(false)
+  hasBluetooth Boolean @default(true)
+  hasParkingSensor Boolean @default(false)
+  hasReverseCamera Boolean @default(false)
+  hasCruiseControl Boolean @default(false)
+  hasSunroof Boolean @default(false)
+  hasLeatherSeats Boolean @default(false)
+  hasIsofix Boolean @default(true)
+
+  // --- Fiyatlandırma ---
+  dailyPrice Float?
+  weeklyPrice Float?
+  monthlyPrice Float?
+  deposit Float?
+  showPrice Boolean @default(true)
+  extraKmPrice Float?
+  vatIncluded Boolean @default(true)
+
+  // --- Kiralama koşulları ---
+  minimumRentalDays Int @default(1)
+  dailyKmLimit Int?
+  monthlyKmLimit Int?
+  minDriverAge Int @default(21)
+  minLicenseYears Int @default(1)
+  insuranceInfo String?
+  fuelPolicy String?
+  deliveryInfo String?
+  cancellationPolicy String?
+  hgsIncluded Boolean @default(true)
+  additionalDriverAllowed Boolean @default(true)
+  cityDeliveryFree Boolean @default(true)
+
+  // --- Durum ve yayın ---
+  status VehicleStatus @default(AVAILABLE)
+  featured Boolean @default(false)
+  budgetFriendly Boolean @default(false)
+  showOnHomepage Boolean @default(false)
+  sortOrder Int @default(0)
+  mainImage String?
+  /** Ic mekan fotograflari - JSON dizi: ["/uploads/a.jpg", ...] */
+  interiorImages String?
+  videoUrl String?
+  viewCount Int @default(0)
+  rating Float?
+  reviewCount Int @default(0)
+
+  seoTitle String?
+  seoDescription String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deletedAt DateTime?
+
+  images VehicleImage[]
+  rentalRequests RentalRequest[]
+
+  @@index([categoryId])
+  @@index([status])
+  @@index([featured])
+  @@index([budgetFriendly])
+  @@index([slug])
+  @@index([brand])
+}
+
+model VehicleImage {
+  id String @id @default(cuid())
+  vehicleId String
+  vehicle Vehicle @relation(fields:[vehicleId],references:[id],onDelete:Cascade)
+  imageUrl String
+  alt String?
+  sortOrder Int @default(0)
+  createdAt DateTime @default(now())
+  @@index([vehicleId])
+}
+
+model RentalRequest {
+  id String @id @default(cuid())
+  vehicleId String
+  vehicle Vehicle @relation(fields:[vehicleId],references:[id],onDelete:Restrict)
+  fullName String
+  phone String
+  email String?
+  company String?
+  startDate DateTime?
+  endDate DateTime?
+  pickupLocation String?
+  dropoffLocation String?
+  message String?
+  status RequestStatus @default(NEW)
+  adminNote String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deletedAt DateTime?
+  @@index([status])
+  @@index([createdAt])
+}
+
+model Settings {
+  id Int @id @default(1)
+  siteName String
+  companyLegalName String
+  phone String
+  phoneSecondary String?
+  whatsapp String
+  email String
+  address String
+  mersisNo String
+  tradeRegistryNo String
+  tradeRegistryOffice String
+  taxOffice String?
+  taxNumber String?
+  googleMapsUrl String?
+  instagramUrl String?
+  facebookUrl String?
+  linkedinUrl String?
+  tiktokUrl String?
+  youtubeUrl String?
+  workingHours String?
+  workingHoursWeekend String?
+  logoUrl String?
+  faviconUrl String?
+  footerDescription String?
+  seoTitle String?
+  seoDescription String?
+  campaignEnabled Boolean @default(true)
+  campaignTitle String? @default("Kurumsal kiralamada size özel çözümler")
+  campaignText String? @default("İhtiyacınıza uygun aracı birlikte belirleyelim. Hızlı bilgi ve teklif için WhatsApp üzerinden bize ulaşın.")
+  campaignImageUrl String? @default("/og.png")
+  campaignButtonText String? @default("WhatsApp'tan Teklif Al")
+  updatedAt DateTime @updatedAt
+}
