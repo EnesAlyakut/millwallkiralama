@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  millwall-api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    container_name: millwall-api
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    env_file:
+      - .env
+    volumes:
+      # Veritabanı dosyasının silinmemesi için volume bağlaması
+      - ./dev.db:/app/dev.db
+      - ./dev.db-journal:/app/dev.db-journal
+      - ./uploads:/app/uploads
+
+  millwall-web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    container_name: millwall-web
+    restart: unless-stopped
+    ports:
+      - "3050:3050"
+    env_file:
+      - .env
+    depends_on:
+      - millwall-api
