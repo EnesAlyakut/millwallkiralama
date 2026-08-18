@@ -375,14 +375,14 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
               </ul>
 
               {(v.description || v.highlightText) && (
-                <Reveal className="detail-about">
+                <div className="detail-about">
                   <span className="eyebrow eyebrow-dark">ARAÇ HAKKINDA</span>
                   <h2>
                     {[v.brand, v.model].filter(Boolean).join(' ')} neden tercih ediliyor?
                   </h2>
                   {v.description && <p>{v.description}</p>}
                   {v.highlightText && <p>{v.highlightText}</p>}
-                </Reveal>
+                </div>
               )}
 
               {highlightSpecs.length > 0 && (
