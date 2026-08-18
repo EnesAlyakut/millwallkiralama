@@ -831,7 +831,7 @@ input:user-invalid:focus, select:user-invalid:focus, textarea:user-invalid:focus
 .drawer {
   position: fixed;
   inset: 0;
-  z-index: 90;
+  z-index: 110;
   background: rgba(8, 17, 27, .55);
   backdrop-filter: blur(4px);
   opacity: 0; visibility: hidden;
@@ -857,7 +857,7 @@ input:user-invalid:focus, select:user-invalid:focus, textarea:user-invalid:focus
   font-size: 1.3rem; color: var(--muted);
   display: grid; place-items: center;
 }
-.drawer-panel > a {
+.drawer-panel > div > a {
   display: flex; align-items: center; justify-content: space-between;
   padding: 15px 14px;
   border-radius: var(--radius-sm);
@@ -865,8 +865,8 @@ input:user-invalid:focus, select:user-invalid:focus, textarea:user-invalid:focus
   border-bottom: 1px solid var(--line);
   transition: background var(--fast), padding-left var(--fast);
 }
-.drawer-panel > a:hover { background: var(--paper-2); padding-left: 20px; }
-.drawer-panel > a span { color: var(--muted-light); font-size: .8rem; }
+.drawer-panel > div > a:hover { background: var(--paper-2); padding-left: 20px; }
+.drawer-panel > div > a span { color: var(--muted-light); font-size: .8rem; }
 .drawer-group {
   margin-top: 14px; padding: 0 14px 6px;
   font-size: .68rem; font-weight: 800; letter-spacing: .16em;
@@ -1436,10 +1436,9 @@ footer.site-footer {
 }
 .v-card-flags {
   position: absolute; top: 14px; left: 14px;
-  max-width: calc(100% - 28px);
+  max-width: 55%;
   display: flex; flex-wrap: wrap; gap: 6px; z-index: 2;
 }
-.v-card-media:has(.v-card-status) .v-card-flags { max-width: 55%; }
 .v-card-status {
   position: absolute; top: 14px; right: 14px; z-index: 2;
   display: inline-flex; align-items: center; gap: 7px;
