@@ -17,7 +17,6 @@ FROM alpine AS builder
 WORKDIR /app
 
 # Install dependencies
-COPY .gitignore .gitignore
 COPY --from=pruner /app/out/json/ .
 COPY --from=pruner /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
 RUN pnpm install --frozen-lockfile
