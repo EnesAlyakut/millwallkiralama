@@ -374,6 +374,40 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 ))}
               </ul>
 
+              {v.showPrice && v.dailyPrice ? (
+                <div className="price-box">
+                  {v.mainImage && <img className="price-bg" src={v.mainImage} alt="" aria-hidden="true" />}
+                  <div className="price-box-head">
+                    <small>Günlük kiralama bedeli</small>
+                    <span className="price-vat">{v.vatIncluded ? 'KDV DAHİL' : 'KDV HARİÇ'}</span>
+                  </div>
+                  <strong>
+                    {money(v.dailyPrice)} <span>/ gün</span>
+                  </strong>
+                  <ul className="price-facts">
+                    {priceFacts.map(([icon, text]) => (
+                      <li key={text}>
+                        <Icon name={icon} size={15} /> {text}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <div className="price-box price-box-call">
+                  {v.mainImage && <img className="price-bg" src={v.mainImage} alt="" aria-hidden="true" />}
+                  <div className="price-box-head">
+                    <small>Fiyatlandırma</small>
+                    <span className="price-vat">TEKLİFE ÖZEL</span>
+                  </div>
+                  <strong>Size özel teklif</strong>
+                  <ul className="price-facts">
+                    <li><Icon name="clock" size={15} /> Aynı gün dönüş</li>
+                    <li><Icon name="document" size={15} /> Yazılı teklif</li>
+                    <li><Icon name="shield" size={15} /> Sigorta dahil</li>
+                  </ul>
+                </div>
+              )}
+
               {(v.description || v.highlightText) && (
                 <div className="detail-about">
                   <span className="eyebrow eyebrow-dark">ARAÇ HAKKINDA</span>
@@ -447,39 +481,6 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 </dl>
               )}
 
-              {v.showPrice && v.dailyPrice ? (
-                <div className="price-box">
-                  {v.mainImage && <img className="price-bg" src={v.mainImage} alt="" aria-hidden="true" />}
-                  <div className="price-box-head">
-                    <small>Günlük kiralama bedeli</small>
-                    <span className="price-vat">{v.vatIncluded ? 'KDV DAHİL' : 'KDV HARİÇ'}</span>
-                  </div>
-                  <strong>
-                    {money(v.dailyPrice)} <span>/ gün</span>
-                  </strong>
-                  <ul className="price-facts">
-                    {priceFacts.map(([icon, text]) => (
-                      <li key={text}>
-                        <Icon name={icon} size={15} /> {text}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : (
-                <div className="price-box price-box-call">
-                  {v.mainImage && <img className="price-bg" src={v.mainImage} alt="" aria-hidden="true" />}
-                  <div className="price-box-head">
-                    <small>Fiyatlandırma</small>
-                    <span className="price-vat">TEKLİFE ÖZEL</span>
-                  </div>
-                  <strong>Size özel teklif</strong>
-                  <ul className="price-facts">
-                    <li><Icon name="clock" size={15} /> Aynı gün dönüş</li>
-                    <li><Icon name="document" size={15} /> Yazılı teklif</li>
-                    <li><Icon name="shield" size={15} /> Sigorta dahil</li>
-                  </ul>
-                </div>
-              )}
 
               <div className="detail-actions">
                 <a className="btn btn-accent btn-block btn-lg detail-call" href={tel}>
