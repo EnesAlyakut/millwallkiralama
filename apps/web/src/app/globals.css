@@ -3911,9 +3911,6 @@ img, svg, video, iframe, table { max-width: 100%; }
   .office-cta .btn { width: 100%; }
 }
 
-  .detail-spec-strip { order: 5; }
-  .detail-steps { order: 6; }
-}
 
 @media (max-width: 620px) {
   /* Ust bar: marka + telefon + menu sigmiyordu. */
