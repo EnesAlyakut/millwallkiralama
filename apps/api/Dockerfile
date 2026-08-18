@@ -1,9 +1,7 @@
-FROM node:18-alpine AS alpine
+FROM node:20-alpine AS alpine
 
 # Setup pnpm
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable
+RUN npm install -g pnpm
 
 # 1. Prune step
 FROM alpine AS pruner
