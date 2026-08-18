@@ -429,13 +429,13 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 30px 0; }
 input:not([type='checkbox'], [type='radio'], [type='file'], [type='submit'], [type='button'], [type='hidden'], [type='range'], [type='color']),
 select, textarea {
   width: 100%;
-  min-height: 52px;
-  padding: 13px 16px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-  background: var(--paper-2);
-  box-shadow: inset 0 1px 2px rgba(10, 22, 40, .035);
-  font-size: .92rem;
+  min-height: 54px;
+  padding: 14px 18px;
+  border: 1.5px solid var(--line-2);
+  border-radius: var(--radius);
+  background: #fdfdfd;
+  box-shadow: inset 0 2px 4px rgba(10, 22, 40, .01);
+  font-size: .95rem;
   font-weight: 500;
   letter-spacing: .005em;
   color: var(--text);
@@ -3850,7 +3850,22 @@ a.contact-card:hover .cc-action svg { transform: translateX(4px); }
   .compare-row > *:nth-child(3)::before { content: 'Kiralama: '; color: var(--muted); font-weight: 600; }
   .registry-list div { grid-template-columns: 1fr; gap: 4px; }
   .detail-quick, .v-card-specs { grid-template-columns: repeat(2, 1fr); }
-  .request-form { padding: 20px; }
+  .request-block {
+    margin: 0 -16px;
+    border-radius: 0;
+    padding: 32px 18px 48px;
+  }
+  .request-form {
+    padding: 26px 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  }
+  .request-form .btn {
+    min-height: 56px;
+    border-radius: 14px;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 620px) {
