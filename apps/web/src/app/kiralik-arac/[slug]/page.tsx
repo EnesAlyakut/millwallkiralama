@@ -260,14 +260,12 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     ...cabinFlags.map(([icon, label]) => ({ icon, label: 'Donanım', value: label })),
   ].slice(0, 6);
 
-  /* Ic mekan fotografi yoksa kabin ozelligi hic gosterilmez. */
-  const cabin = interiorPhotos.length
-    ? {
-        images: interiorPhotos,
-        items: cabinItems,
-        note: null,
-      }
-    : null;
+  /* Eger ic mekan fotografi yoksa bile detaylari gostermek icin dis gorseli kullaniyoruz. */
+  const cabin = {
+    images: interiorPhotos.length > 0 ? interiorPhotos : (photos.length > 0 ? [photos[0]] : []),
+    items: cabinItems,
+    note: null,
+  };
 
   const assurances = ([
     ['shield', 'Sigorta güvencesi', 'Kasko ve zorunlu trafik sigortası fiyata dahildir.'],
@@ -359,7 +357,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                   · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a>
                 </p>
               )}
+            </div>
 
+            <div className="detail-media-bottom">
               <ul className="detail-assurance">
                 {assurances.map(([icon, title, text]) => (
                   <li key={title}>
