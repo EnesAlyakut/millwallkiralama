@@ -45,9 +45,11 @@ RUN adduser --system --uid 1001 api
 COPY --from=builder /app/apps/api/package.json ./apps/api/package.json
 COPY --from=builder /app/apps/api/dist ./apps/api/dist
 COPY --from=builder /app/packages/database/package.json ./packages/database/package.json
-COPY --from=builder /app/packages/database/dist ./packages/database/dist
 COPY --from=builder /app/packages/shared/package.json ./packages/shared/package.json
-COPY --from=builder /app/packages/shared/dist ./packages/shared/dist
+
+# Copy raw source files for packages since they are not compiled separately
+COPY --from=builder /app/packages/database ./packages/database
+COPY --from=builder /app/packages/shared ./packages/shared
 
 # Copy prisma schema for runtime if needed
 COPY --from=builder /app/packages/database/prisma ./packages/database/prisma
