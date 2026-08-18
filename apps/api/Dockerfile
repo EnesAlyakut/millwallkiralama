@@ -24,7 +24,7 @@ RUN pnpm install --frozen-lockfile
 # Copy source code and build
 COPY --from=pruner /app/out/full/ .
 COPY turbo.json turbo.json
-RUN pnpm add -g turbo
+RUN npm install -g turbo
 
 # Generate Prisma client before building
 RUN cd packages/database && pnpm exec prisma generate
