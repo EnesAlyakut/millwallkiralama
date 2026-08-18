@@ -24,6 +24,7 @@ RUN pnpm install --frozen-lockfile
 # Build the project
 COPY --from=pruner /app/out/full/ .
 COPY turbo.json turbo.json
+RUN pnpm add -g turbo
 RUN pnpm run build --filter=@kiralama/web...
 
 # 3. Runner step
