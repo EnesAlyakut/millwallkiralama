@@ -455,7 +455,12 @@ textarea {
   line-height: 1.7;
   padding: 14px 16px;
 }
-input[type='date']::-webkit-calendar-picker-indicator {
+  input[type='date'] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+  }
+  input[type='date']::-webkit-calendar-picker-indicator {
   opacity: .45; cursor: pointer;
   transition: opacity var(--fast);
 }
@@ -1060,7 +1065,7 @@ footer.site-footer {
 .campaign-close:hover { transform: rotate(90deg); }
 
 /* --------------------------------------------------------------------------
-   6. ANASAYFA Ã¢â‚¬â€ Premium Kurumsal TasarÃ„Â±m
+   6. ANASAYFA Ã¢â‚¬â€  Premium Kurumsal TasarÃ„Â±m
    -------------------------------------------------------------------------- */
 
 /* --- Shimmer animasyonu --- */
@@ -3813,7 +3818,7 @@ a.contact-card:hover .cc-action svg { transform: translateX(4px); }
 }
 
 @media (max-width: 860px) {
-  body { padding-bottom: 72px; }
+  body { padding-bottom: 110px; }
   .mobile-bar { display: flex; }
   .cookie-card { left: 12px; right: 12px; bottom: 82px; width: auto; }
   .topbar .container { justify-content: center; }
@@ -3830,6 +3835,19 @@ a.contact-card:hover .cc-action svg { transform: translateX(4px); }
   .registry-list div { grid-template-columns: 1fr; gap: 4px; }
   .detail-quick, .v-card-specs { grid-template-columns: repeat(2, 1fr); }
   .request-form { padding: 20px; }
+}
+
+@media (max-width: 760px) {
+  /* Arac detayi: mobilde fiyat ve iletisim paneli galeriden hemen sonra gelsin. */
+  .detail-grid { display: flex; flex-direction: column; gap: 16px; }
+  .detail-media { display: contents; }
+  .detail-media > * { width: 100%; flex-shrink: 0; }
+  .detail-media .gallery { order: 1; }
+  .detail-summary { order: 2; width: 100%; flex-shrink: 0; }
+  .detail-assurance { order: 3; }
+  .detail-about { order: 4; }
+  .detail-spec-strip { order: 5; }
+  .detail-steps { order: 6; }
 }
 
 @media (max-width: 620px) {
@@ -3894,14 +3912,6 @@ img, svg, video, iframe, table { max-width: 100%; }
   .office-cta .btn { width: 100%; }
 }
 
-@media (max-width: 760px) {
-  /* Arac detayi: mobilde fiyat ve iletisim paneli galeriden hemen sonra gelsin. */
-  .detail-grid { display: flex; flex-direction: column; gap: 16px; }
-  .detail-media { display: contents; }
-  .detail-media .gallery { order: 1; }
-  .detail-summary { order: 2; }
-  .detail-assurance { order: 3; }
-  .detail-about { order: 4; }
   .detail-spec-strip { order: 5; }
   .detail-steps { order: 6; }
 }
