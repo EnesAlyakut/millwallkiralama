@@ -260,12 +260,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     ...cabinFlags.map(([icon, label]) => ({ icon, label: 'Donanım', value: label })),
   ].slice(0, 6);
 
-  /* Eger ic mekan fotografi yoksa bile detaylari gostermek icin dis gorseli kullaniyoruz. */
-  const cabin = {
-    images: interiorPhotos.length > 0 ? interiorPhotos : (photos.length > 0 ? [photos[0]] : []),
-    items: cabinItems,
-    note: null,
-  };
+  /* Ic mekan yalnizca aracin gercek kokpit fotografi varsa acilir.
+     Fotograf yoksa dis gorsel "ic mekan" gibi gosterilmez, buton hic cikmaz. */
+  const cabin = interiorPhotos.length > 0
+    ? { images: interiorPhotos, items: cabinItems, note: null }
+    : null;
 
   const assurances = ([
     ['shield', 'Sigorta güvencesi', 'Kasko ve zorunlu trafik sigortası fiyata dahildir.'],

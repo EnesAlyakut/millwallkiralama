@@ -44,6 +44,9 @@ type V = Omit<Prisma.VehicleCreateInput, 'category'> & { categorySlug: string; g
 
 const art = (slug: string) => `/fleet/${slug}.jpg`;
 
+/* Aracın gerçek iç mekân (kokpit) fotoğrafları — galeride "İç mekân" görünümünde kullanılır. */
+const cabin = (...files: string[]) => JSON.stringify(files.map((file) => `/fleet/${file}`));
+
 /* ------------------------------------------------------------------ */
 /*  Araçlar                                                            */
 /* ------------------------------------------------------------------ */
@@ -71,6 +74,7 @@ const vehicles: V[] = [
     deliveryInfo: 'İstanbul Anadolu Yakası içinde ücretsiz teslimat yapılır.',
     featured: true, budgetFriendly: true, showOnHomepage: true, sortOrder: 1, rating: 4.7, reviewCount: 38,
     mainImage: art('fiat-egea'), seoTitle: 'Kiralık Fiat Egea Sedan | Günlük ve Aylık Fiyatlar',
+    interiorImages: cabin('fiat-egea-interior-scrape.jpg'),
   },
   {
     categorySlug: 'araba', name: 'Renault Clio', slug: 'renault-clio', brand: 'Renault', model: 'Clio', version: 'Touch 1.0 TCe',
@@ -90,6 +94,7 @@ const vehicles: V[] = [
     dailyKmLimit: 300, monthlyKmLimit: 4000,
     featured: true, budgetFriendly: true, showOnHomepage: true, sortOrder: 2, rating: 4.6, reviewCount: 27,
     mainImage: art('renault-clio'), seoTitle: 'Kiralık Renault Clio Otomatik | Millwal',
+    interiorImages: cabin('renault-clio-interior-scrape.jpg'),
   },
   {
     categorySlug: 'araba', name: 'Hyundai i20', slug: 'hyundai-i20', brand: 'Hyundai', model: 'i20', version: 'Jump 1.4 MPI',
@@ -107,6 +112,7 @@ const vehicles: V[] = [
     dailyPrice: 1450, weeklyPrice: 9200, monthlyPrice: 32500, deposit: 5000, dailyKmLimit: 300,
     budgetFriendly: true, showOnHomepage: true, sortOrder: 3, rating: 4.5, reviewCount: 19,
     mainImage: art('hyundai-i20'),
+    interiorImages: cabin('hyundai-i20-interior-scrape.jpeg'),
   },
   {
     categorySlug: 'araba', name: 'Renault Megane Sedan', slug: 'renault-megane', brand: 'Renault', model: 'Megane', version: 'Icon 1.5 Blue dCi EDC',
@@ -127,6 +133,7 @@ const vehicles: V[] = [
     dailyKmLimit: 350, monthlyKmLimit: 5000, minDriverAge: 23,
     featured: true, showOnHomepage: true, sortOrder: 4, rating: 4.8, reviewCount: 22,
     mainImage: art('renault-megane'),
+    interiorImages: cabin('renault-megane-interior-scrape.jpg'),
   },
   {
     categorySlug: 'araba', name: 'Toyota Corolla Hybrid', slug: 'toyota-corolla-hybrid', brand: 'Toyota', model: 'Corolla', version: 'Dream 1.8 Hybrid e-CVT',
@@ -148,6 +155,7 @@ const vehicles: V[] = [
     dailyKmLimit: 350, minDriverAge: 23,
     featured: true, showOnHomepage: true, sortOrder: 5, rating: 4.9, reviewCount: 31,
     mainImage: art('toyota-corolla-hybrid'), seoTitle: 'Kiralık Toyota Corolla Hybrid | Düşük Tüketim',
+    interiorImages: cabin('toyota-corolla-hybrid-interior.jpg'),
   },
   {
     categorySlug: 'araba', name: 'Volkswagen Passat', slug: 'volkswagen-passat', brand: 'Volkswagen', model: 'Passat', version: 'Business 2.0 TDI DSG',
@@ -170,6 +178,7 @@ const vehicles: V[] = [
     insuranceInfo: 'Kasko ve trafik sigortası dahildir. Üst segment araçlarda muafiyet 15.000 ₺ olarak uygulanır.',
     featured: true, showOnHomepage: true, sortOrder: 6, rating: 4.9, reviewCount: 16,
     mainImage: art('volkswagen-passat'),
+    interiorImages: cabin('volkswagen-passat-interior-scrape.jpg'),
   },
   {
     categorySlug: 'araba', name: 'Audi A4', slug: 'audi-a4', brand: 'Audi', model: 'A4', version: 'Advanced 35 TDI S tronic',
@@ -214,6 +223,7 @@ const vehicles: V[] = [
     cancellationPolicy: 'Premium sınıf araçlarda iptal talebi kiralama başlangıcından en az 48 saat önce iletilmelidir.',
     featured: true, sortOrder: 8, rating: 4.9, reviewCount: 14,
     mainImage: art('bmw-320i'), seoTitle: 'Kiralık BMW 320i M Sport | Premium Araç Kiralama',
+    interiorImages: cabin('bmw-320i-interior-scrape.jpg'),
   },
   {
     categorySlug: 'araba', name: 'Mercedes-Benz E 200', slug: 'mercedes-e200', brand: 'Mercedes-Benz', model: 'E Serisi', version: 'Exclusive E 200 9G-TRONIC',
@@ -280,6 +290,7 @@ const vehicles: V[] = [
     dailyKmLimit: 350, minDriverAge: 25, minLicenseYears: 2,
     showOnHomepage: true, sortOrder: 11, rating: 4.7, reviewCount: 13,
     mainImage: art('skoda-superb'),
+    interiorImages: cabin('skoda-superb-interior-scrape.jpg'),
   },
 
   /* ------------------------------------------------------------- SUV */
@@ -302,6 +313,7 @@ const vehicles: V[] = [
     dailyKmLimit: 300, minDriverAge: 24, minLicenseYears: 2,
     featured: true, showOnHomepage: true, sortOrder: 12, rating: 4.6, reviewCount: 17,
     mainImage: art('peugeot-2008'),
+    interiorImages: cabin('peugeot-2008-interior-scrape.jpg'),
   },
   {
     categorySlug: 'araba', name: 'Nissan Qashqai e-Power', slug: 'nissan-qashqai', brand: 'Nissan', model: 'Qashqai', version: 'Tekna e-Power',
@@ -323,6 +335,7 @@ const vehicles: V[] = [
     dailyKmLimit: 300, minDriverAge: 25, minLicenseYears: 2,
     featured: true, showOnHomepage: true, sortOrder: 13, rating: 4.8, reviewCount: 12,
     mainImage: art('nissan-qashqai'),
+    interiorImages: cabin('nissan-qashqai-interior-scrape.jpg'),
   },
 
   /* ------------------------------------------------- HAFİF TİCARİ */
@@ -346,6 +359,7 @@ const vehicles: V[] = [
     deliveryInfo: 'Ticari araçlarda teslimat, iş yeri adresinize planlı şekilde yapılabilir.',
     budgetFriendly: true, showOnHomepage: true, sortOrder: 20, rating: 4.5, reviewCount: 24,
     mainImage: art('fiat-doblo'),
+    interiorImages: cabin('fiat-doblo-interior-scrape.jpg'),
   },
   {
     categorySlug: 'ticari', name: 'Ford Transit Custom', slug: 'ford-transit-custom', brand: 'Ford', model: 'Transit Custom', version: 'Trend L1H1 2.0 EcoBlue',
@@ -366,6 +380,7 @@ const vehicles: V[] = [
     dailyKmLimit: 400, monthlyKmLimit: 6000, minDriverAge: 25, minLicenseYears: 2,
     featured: true, showOnHomepage: true, sortOrder: 21, rating: 4.7, reviewCount: 18,
     mainImage: art('ford-transit-custom'),
+    interiorImages: cabin('ford-transit-custom-interior-scrape.jpg'),
   },
   {
     categorySlug: 'ticari', name: 'Ford Ranger 4x4', slug: 'ford-ranger', brand: 'Ford', model: 'Ranger', version: 'XLT 2.0 EcoBlue 4x4',
@@ -408,6 +423,7 @@ const vehicles: V[] = [
     dailyKmLimit: 400, minDriverAge: 26, minLicenseYears: 3,
     featured: true, showOnHomepage: true, sortOrder: 30, rating: 4.6, reviewCount: 15,
     mainImage: art('ford-transit-jumbo'),
+    interiorImages: cabin('ford-transit-jumbo-interior-scrape.jpg'),
   },
   {
     categorySlug: 'ticari', name: 'Mercedes-Benz Sprinter', slug: 'mercedes-sprinter', brand: 'Mercedes-Benz', model: 'Sprinter', version: '316 CDI Uzun Şasi',
@@ -428,6 +444,7 @@ const vehicles: V[] = [
     dailyKmLimit: 400, minDriverAge: 26, minLicenseYears: 3,
     sortOrder: 31, rating: 4.8, reviewCount: 10,
     mainImage: art('mercedes-sprinter'),
+    interiorImages: cabin('mercedes-sprinter-interior-scrape.jpg'),
   },
 
   /* -------------------------------------------------- MOTOSİKLET */
@@ -450,6 +467,7 @@ const vehicles: V[] = [
     deliveryInfo: 'Motosikletler ofisimizden teslim alınır; şehir içi teslimat ek ücrete tabidir.',
     budgetFriendly: true, showOnHomepage: true, sortOrder: 40, rating: 4.4, reviewCount: 26,
     mainImage: art('honda-cbf-250'), cityDeliveryFree: false,
+    interiorImages: cabin('honda-cbf-250-interior-scrape.jpg'),
   },
   {
     categorySlug: 'motor', name: 'Yamaha MT-07', slug: 'yamaha-mt-07', brand: 'Yamaha', model: 'MT-07', version: 'ABS',
@@ -469,6 +487,7 @@ const vehicles: V[] = [
     insuranceInfo: 'Zorunlu trafik sigortası dahildir. A sınıfı ehliyet ve en az 2 yıl deneyim gereklidir.',
     featured: true, sortOrder: 41, rating: 4.9, reviewCount: 12,
     mainImage: art('yamaha-mt-07'), cityDeliveryFree: false,
+    interiorImages: cabin('yamaha-mt-07-interior-scrape.jpeg'),
   },
   {
     categorySlug: 'motor', name: 'Vespa Primavera 125', slug: 'vespa-primavera', brand: 'Vespa', model: 'Primavera', version: '125 i-get',
@@ -487,6 +506,7 @@ const vehicles: V[] = [
     dailyKmLimit: 150, minDriverAge: 20, minLicenseYears: 1,
     budgetFriendly: true, sortOrder: 42, rating: 4.5, reviewCount: 20,
     mainImage: art('vespa-primavera'), cityDeliveryFree: false,
+    interiorImages: cabin('vespa-primavera-interior-scrape.jpg'),
   },
 
   /* ------------------------------------------------------- TEKNE */
@@ -530,6 +550,7 @@ const vehicles: V[] = [
     fuelPolicy: 'Yakıt kiralama bedeline dahil değildir.',
     sortOrder: 51, rating: 4.6, reviewCount: 5,
     mainImage: art('bayliner-vr5'), cityDeliveryFree: false, hgsIncluded: false,
+    interiorImages: cabin('bayliner-vr5-interior-scrape.png'),
   },
 
   /* ------------------------------------------------------ JETSKİ */
@@ -568,6 +589,7 @@ const vehicles: V[] = [
     fuelPolicy: 'Yakıt kullanım sonunda ölçülerek faturalandırılır.',
     budgetFriendly: true, sortOrder: 61, rating: 4.6, reviewCount: 14,
     mainImage: art('seadoo-gti-130'), cityDeliveryFree: false, hgsIncluded: false,
+    interiorImages: cabin('seadoo-gti-130-interior-scrape.jpeg'),
   },
 
   /* --------------------------------------------------------- ATV */
@@ -589,6 +611,7 @@ const vehicles: V[] = [
     deliveryInfo: 'ATV araçları belirlenen arazi parkurunda teslim edilir; karayolu kullanımına uygun değildir.',
     featured: true, sortOrder: 70, rating: 4.7, reviewCount: 11,
     mainImage: art('cfmoto-cforce-520'), cityDeliveryFree: false, hgsIncluded: false,
+    interiorImages: cabin('cfmoto-cforce-520-interior-scrape.jpg'),
   },
   {
     categorySlug: 'atv', name: 'Polaris Sportsman 570', slug: 'polaris-sportsman-570', brand: 'Polaris', model: 'Sportsman 570', version: 'EPS',

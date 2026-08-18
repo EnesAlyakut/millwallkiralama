@@ -69,8 +69,12 @@ export default function VehicleGallery({
   const [cabinIndex, setCabinIndex] = useState(0);
   const [mediaMode, setMediaMode] = useState<'video' | 'photos'>(video ? 'video' : 'photos');
   const [autoPlay, setAutoPlay] = useState(true);
+  /* Yuklenemeyen (404) ic mekan gorselleri devre disi birakilir; boylece
+     "Ic mekan" gorunumu asla bos/dis gorsel gibi gozukmez. */
+  const [brokenCabin, setBrokenCabin] = useState<string[]>([]);
   const total = photos.length;
-  const cabinTotal = cabin?.images.length ?? 0;
+  const cabinImages = (cabin?.images ?? []).filter((img) => !brokenCabin.includes(img.url));
+  const cabinTotal = cabinImages.length;
   const hasCabin = cabinTotal > 0;
 
   const goCabin = useCallback(
@@ -109,10 +113,18 @@ export default function VehicleGallery({
 
   useEffect(() => {
     if (!openCabin) return;
+    if (!hasCabin) {
+      setOpenCabin(false);
+      return;
+    }
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpenCabin(false);
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [openCabin]);
+  }, [openCabin, hasCabin]);
+
+  useEffect(() => {
+    if (cabinIndex >= cabinTotal) setCabinIndex(0);
+  }, [cabinIndex, cabinTotal]);
 
   /* Fotoğraflar video gibi akar; kullanıcı isterse durdurabilir veya oklarla ilerleyebilir. */
   useEffect(() => {
@@ -185,7 +197,7 @@ export default function VehicleGallery({
         {/* Kabin: aracın gerçek iç mekân fotoğrafı */}
         {hasCabin && (
           <div className="cabin" aria-hidden={!openCabin}>
-            {cabin!.images.map((img, i) => (
+            {cabinImages.map((img, i) => (
               <img
                 key={img.url}
                 className="cabin-photo"
@@ -193,6 +205,7 @@ export default function VehicleGallery({
                 src={img.url}
                 alt={img.alt || `${name} iç mekân görseli ${i + 1}`}
                 loading="lazy"
+                onError={() => setBrokenCabin((list) => (list.includes(img.url) ? list : [...list, img.url]))}
               />
             ))}
             <span className="cabin-shade" />
@@ -219,7 +232,7 @@ export default function VehicleGallery({
             )}
 
             <ul className="cabin-strip">
-              {cabin!.items.map((item, i) => (
+              {(cabin?.items ?? []).map((item, i) => (
                 <li key={`${item.label}-${item.value}-${i}`} style={{ '--i': i } as React.CSSProperties}>
                   <span>
                     <Icon name={item.icon} size={16} />
