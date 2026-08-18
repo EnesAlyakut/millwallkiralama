@@ -3616,7 +3616,7 @@ a.contact-card:hover .cc-action svg { transform: translateX(4px); }
 .status.RESERVED { background: #fdf2d9; color: #8a6208; }
 .status.MAINTENANCE { background: #fdeceb; color: #b6301f; }
 .status.PASSIVE { background: var(--paper-3); color: var(--muted); }
-.status.NEW { background: #fff1e9; color: var(--accent-ink); }
+.status.NEW { background: #fff1e9; color: #8a6208; }
 .status.CALLED, .status.CONTACTING { background: #e7f0fb; color: #2b5f9f; }
 .status.CANCELLED { background: var(--paper-3); color: var(--muted); }
 

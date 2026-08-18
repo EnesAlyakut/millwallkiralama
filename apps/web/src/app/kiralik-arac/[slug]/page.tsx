@@ -96,11 +96,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
   const isInterior = (url: string) => interiorUrls.includes(url);
 
-  /* Tum gorseller galeride listelenir. */
+  /* Galeride yalnizca dis gorseller listelenir; ic mekan kapilarin arkasinda gosterilir. */
   const photos = [
-    ...(v.mainImage ? [{ url: v.mainImage, alt: `${v.name} ana görsel` }] : []),
+    ...(v.mainImage && !isInterior(v.mainImage) ? [{ url: v.mainImage, alt: `${v.name} ana görsel` }] : []),
     ...v.images
-      .filter((i) => i.imageUrl !== v.mainImage)
+      .filter((i) => i.imageUrl !== v.mainImage && !isInterior(i.imageUrl))
       .map((i) => ({ url: i.imageUrl, alt: i.alt })),
   ];
 
