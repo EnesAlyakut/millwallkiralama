@@ -190,6 +190,27 @@ export default function VehicleForm({
       {/* --------------------------------------------------------- GENEL */}
       <section className="form-section" id="sec-genel">
         <h2><i>①</i> Genel bilgiler</h2>
+        
+        {(mainImage || interior.length > 0) && (
+          <div style={{ display: 'flex', gap: 16, marginBottom: 24, overflowX: 'auto' }}>
+            {mainImage && (
+              <div style={{ flex: 'none', width: 160 }}>
+                <span style={{ display: 'block', fontSize: 11, fontWeight: 800, marginBottom: 6, color: 'var(--muted)', letterSpacing: '0.05em' }}>DIŞ GÖRÜNÜM</span>
+                <img src={mainImage} alt="Dış Görünüm" style={{ width: '100%', height: 100, objectFit: 'cover', borderRadius: 8, border: '1px solid var(--line)' }} />
+              </div>
+            )}
+            {interior.length > 0 && (
+              <div style={{ flex: 'none', width: 160 }}>
+                <span style={{ display: 'block', fontSize: 11, fontWeight: 800, marginBottom: 6, color: 'var(--muted)', letterSpacing: '0.05em' }}>İÇ GÖRÜNÜM</span>
+                <img src={interior[0]} alt="İç Görünüm" style={{ width: '100%', height: 100, objectFit: 'cover', borderRadius: 8, border: '1px solid var(--line)' }} />
+              </div>
+            )}
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+               <a href="#sec-gorsel" className="btn btn-line" style={{ fontSize: 12, padding: '8px 12px' }}>Görselleri Yönet ↓</a>
+            </div>
+          </div>
+        )}
+
         <div className="form-grid form-grid-3">
           <label>
             Araç adı *
